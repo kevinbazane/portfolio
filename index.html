@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/perspectiveRules.css">
+</head>
+
+<div class="portada" id="inicio">
+
+
+
+	<div class="overlay">
+		<h1>LIFE IS NOW</h1>
+	</div>
+
+
+	<nav class="nav">
+            <span id="brand">
+                  <a href="index.html">Brand</a>
+            </span>
+
+            <ul id="menu" class="">
+                  <li><a href="#inicio">Home</a></li>
+                  <li><a href="#sobre">Sobre</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <div id="toggle">
+                  <div class="span" id="one"></div>
+                  <div class="span" id="two"></div>
+                  <div class="span" id="three"></div>
+            </div>
+      </nav>
+
+      <div id="resize">
+            <ul id="menu">
+                  <li><a href="#inicio">Home</a></li>
+                  <li><a href="#sobre">Sobre</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+            </ul>
+      </div>
+
+
+
+            
+            <div class="intro">
+
+                    <a href="#sobre"><button href="#" class="myBtn" onclick="fadeOut()">EXPLORE</button></a>
+            </div>
+        	
+
+	
+
+	
+
+</div>
+
+
+
+
+
+
+
+<div class="container" id="sobre">
+	<div class="rectangle bg-white skew-left"></div>
+	<!-- <h1 class="text-center">Sobre</h1> -->
+	<div class="row titulosobre">
+		<div class="col-4">
+
+			<div class="">
+				<h2>Diseño. <br>Desarrollo. <br>Inspiración. </h2>
+			</div>
+			<img src="img/avatar.png" class="img-fluid" width="200%">
+		</div>
+		<div class="col-8">
+			<h3>Mi nombre es Kevin Bazan Espinoza, me dedico al diseño y desarrollo web <br></h3>
+
+			<a href="#portafolio"><button href="#" class="myBtn-oscuro" onclick="fadeOut()">Ver Portafolio</button></a>
+			
+		</div>
+	</div>
+</div>
+
+
+
+<div class="skills">
+	<h1>My Skills</h1>
+	<li>
+		<h3>HTML5</h3><span class="bar"><span class="html"></span></span>
+	</li>
+
+	<li>
+		<h3>CSS3</h3><span class="bar"><span class="css"></span></span>
+	</li>
+
+	<li>
+		<h3>JQUERY</h3><span class="bar"><span class="jquery"></span></span>
+	</li>
+
+	<li>
+		<h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
+	</li>
+</div>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+<script type="text/javascript" src="js/jquery.logosDistort.js"></script>
+<script type="text/javascript" src="js/jquery.particleground.min.js"></script>
+
+<script type="text/javascript">
+	
+	TweenMax.to(".overlay h1", 2, {
+		opacity: 0,
+		y: -60,
+		ease: Expo.easeInOut
+
+	})
+
+
+	TweenMax.to(".overlay", 2, {
+		delay:1,
+		top: "-100%",
+		ease: Expo.easeInOut
+
+	})
+
+	TweenMax.staggerFrom(".nav ul li", 1, {
+		delay: 2.4, 
+		opacity: 0, 
+		y:20, 
+		ease: Expo.easeInOut
+	}, 0.2)
+
+
+
+	TweenMax.staggerFrom(".nav", 2, {
+		delay:2,
+		opacity: 0,
+		ease: Expo.easeInOut
+
+	})
+
+
+
+
+
+
+	// TweenMax.staggerFrom(".social-media ul li", 1, {
+	// 	delay: 2.4, 
+	// 	opacity: 0, 
+	// 	y:20, 
+	// 	ease: Expo.easeInOut
+	// }, 0.2)
+
+	TweenMax.from(".side-trip", 2, {
+		delay: 2.4,
+		opacity: 0,
+		y: 40,
+		ease: Expo.easeInOut
+
+	})
+
+	TweenMax.from(".intro", 2, {
+		delay: 3.4,
+		opacity: 0,
+		// y: 20,
+		ease: Expo.easeInOut
+
+	})
+
+
+
+
+	// function fadeOut() {
+
+ //     TweenMax.to(".myBtn", 1, {
+ //          y: -100,
+ //          opacity: 0
+ //     });
+
+    
+
+ //     }
+
+
+
+
+
+	$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+  
+
+      $(window).scroll(function() {
+            var scrollPos = $(this).scrollTop();
+            $(".hero-back").css({
+                  'background-size' : 100 + scrollPos + '%'      
+            });
+      });
+
+
+      $("#toggle").click(function() {
+
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+
+      });
+
+
+
+</script>
+
+
+<body>
+
+</body>
+</html>

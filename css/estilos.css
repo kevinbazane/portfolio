@@ -1,0 +1,502 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+
+body{
+	font-family: Poppins !important;
+}
+
+
+.portada{
+	width: 100%;
+	height: 100vh;
+/*	background-image: url("../img/paisaje2d.jpg");*/
+	background-image: url(../img/livework.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+.portada .nav{
+	/*position: absolute;
+	right: 0;
+	margin: 20px;*/
+	/*1em es igual a 16px*/
+}
+
+
+.portada h1{
+	color: #fff;
+	font-size: 100px;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+.portada ul li a{
+	color: #fff;
+	font-size: 20px;
+	/*padding-right: 40px;*/
+
+
+
+}
+
+
+.overlay{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	top: 0%;
+}
+
+.overlay h1{
+	color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	font-weight: bolder;
+	letter-spacing: 12px;
+	
+}
+
+.side-trip h1{
+	/*text-align: left;
+	margin-top: 100px;*/
+}
+
+
+
+
+
+
+ 
+
+ 
+.myBtn {
+     font-family: Poppins;
+     position: absolute;
+     top: 50%;
+     left: 20%;
+     transform: translate(-50%, -50%);
+}
+ 
+button {
+     display: block;
+     padding: 24px 48px;
+     font-family: Poppins;
+     font-weight: 700;
+     font-size: 12px;
+     letter-spacing: 6px;
+     color: #fff;
+     border: 2px solid #fff;
+     text-transform: uppercase;
+     outline: none;
+     overflow: hidden;
+     background: none;
+     z-index: 1;
+     cursor: crosshair;
+     transition: 0.8s ease-out;
+}
+ 
+.myBtn:hover {
+     color: #101010;
+     cursor: crosshair;
+}
+ 
+.myBtn:before {
+     content: "";
+     position: absolute;
+     background: #fff;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 100%;
+     z-index: -1;
+     transition: top 0.8s ease-out;
+}
+ 
+.myBtn:hover:before {
+     top: 0;
+}
+
+
+
+
+
+ 
+button.myBtn-oscuro {
+     display: block;
+     padding: 24px 48px;
+     font-family: Poppins;
+     font-weight: 700;
+     font-size: 12px;
+     letter-spacing: 6px;
+     color: #000;
+     border: 2px solid #000;
+     text-transform: uppercase;
+     outline: none;
+     overflow: hidden;
+     background: none;
+     z-index: 1;
+     cursor: crosshair;
+     transition: 0.8s ease-out;
+}
+
+
+
+
+
+
+.myBtn-oscuro {
+     font-family: Poppins;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+
+
+.myBtn-oscuro:hover {
+     color: #fff;
+     cursor: crosshair;
+}
+ 
+.myBtn-oscuro:before {
+     content: "";
+     position: absolute;
+     background: #000;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 100%;
+     z-index: -1;
+     transition: top 0.8s ease-out;
+}
+ 
+.myBtn-oscuro:hover:before {
+     top: 0;
+}
+
+
+
+.titulosobre h2{
+	font-size: 72px;
+	font-weight: 700;
+	padding-top: 120px;
+	font-family: Arial!important;
+
+}
+
+
+.titulosobre h3{
+	padding: 120px;
+	font-size: 26px;
+	line-height: 40px;
+
+}
+
+
+
+.titulosobre{
+
+}
+
+
+
+
+
+
+
+ 
+nav {
+      width: 100%;
+      /*background: #000;*/
+      background: rgba(0,0,0,0.5);
+      height: 70px;
+      position: static;
+      z-index: 1;
+      position: fixed;
+      /*position: initial;*/
+}
+ 
+nav #brand {
+      float: left;
+      display: block;
+      margin-left: 84px;
+      font-size: 30px;
+      line-height: 70px;
+      font-weight: bold;
+}
+ 
+nav #brand a {
+      color: #fff;
+      transition: all 0.3s ease-out;
+      font-family: "Poppins";
+      font-weight: 300;
+}
+ 
+nav #menu {
+      float: left;
+      left: 50%;
+      position: relative;
+}
+ 
+nav #menu li {
+      display: inline-block;
+      padding: 0px 30px;
+      cursor: pointer;
+      line-height: 70px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+ 
+nav #menu li a {
+      color: #fff;
+      font-family: "Poppins";
+      font-weight: 200;
+}
+ 
+#toggle {
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      z-index: 999;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+ 
+#toggle .span {
+      height: 3px;
+      background: #fff;
+      transition: all 0.3s ease-out;
+      backface-visibility: hidden;
+      margin: 5px auto;
+}
+ 
+#toggle.on #one {
+      transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+ 
+#toggle.on #two {
+      opacity: 0;
+}
+ 
+#toggle.on #three {
+      transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+ 
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: absolute;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+      display: table;
+}
+ 
+#resize #menu {
+      height: 90px;
+      display: table-cell;
+      vertical-align: center;
+}
+ 
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+ 
+#resize li:nth-child(1) {
+      margin-top:140px;
+}
+ 
+#resize #menu li a {
+      color: #fff;
+}
+ 
+#resize.active {
+      visibility: visible;
+      opacity: 0.99;
+}
+ 
+ 
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+      }
+ 
+      nav #brand {
+            margin-left: 18px;
+      }
+ 
+      #menu a {
+            font-family: "Poppins";
+            font-weight: 200;
+            font-size: 20px;
+      }
+ 
+      nav #menu {
+            display: none;
+      }
+}
+ 
+@media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*EFECTO TRIANGULO*/
+
+/*.rectangle{
+	height: 100px;
+	margin-top: -50px;
+}
+
+.bg-white{
+	background-color: white;
+}
+
+.skew-left{
+	transform: skewY(-4deg);
+}
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+.skills{
+	width: 500px;
+	margin: 60px auto;
+	color: #000	;
+}
+
+.skills li{
+	margin: 20px 0;
+}
+
+.bar{
+	background: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #2197e7b3;
+}
+
+.bar span{
+	height: 2px;
+	float: left;
+	background: #2187e7;
+}
+
+.html{
+	width: 90%;
+	animation: html 2s;
+}
+
+.css{
+	width: 65%;
+	animation: : 65% css 2s;
+}
+
+.jquery{
+	width: 50%;
+	animation: : 50% jquery 2s;
+}
+
+.javascript{
+	
+	animation: : 70% javascript 2s;
+}
+
+@keyframes html{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 90%;
+	}
+}
+
+
+
+@keyframes css{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 65%;
+	}
+}
+
+
+
+@keyframes jquery{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+
+
+
