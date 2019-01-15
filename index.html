@@ -3,8 +3,10 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/perspectiveRules.css">
 </head>
@@ -20,14 +22,17 @@
 
 	<nav class="nav">
             <span id="brand">
-                  <a href="index.html">Brand</a>
+                  <!-- <a href="index.html">Brand</a> -->
+                  <a href=""><img src="img/avatar.png" class="img-fluid" width="30px"></a>
             </span>
 
             <ul id="menu" class="">
-                  <li><a href="#inicio">Home</a></li>
+                  <li><a href="#inicio">Inicio</a></li>
                   <li><a href="#sobre">Sobre</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#portafolio">Portafolo</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+
+
             </ul>
 
             <div id="toggle">
@@ -39,10 +44,11 @@
 
       <div id="resize">
             <ul id="menu">
-                  <li><a href="#inicio">Home</a></li>
+                  <li><a href="#inicio">Inicio</a></li>
                   <li><a href="#sobre">Sobre</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#portafolio">Portafolo</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+
             </ul>
       </div>
 
@@ -68,18 +74,29 @@
 
 
 <div class="container" id="sobre">
-	<div class="rectangle bg-white skew-left"></div>
+	<!-- <h1>Sobre mi</h1> -->
+	<!-- <a href=""><img src="img/avatar.png" class="img-fluid" width="170px"></a> -->
 	<!-- <h1 class="text-center">Sobre</h1> -->
 	<div class="row titulosobre">
 		<div class="col-4">
 
-			<div class="">
+			
 				<h2>Diseño. <br>Desarrollo. <br>Inspiración. </h2>
-			</div>
-			<img src="img/avatar.png" class="img-fluid" width="200%">
+			
+			
 		</div>
 		<div class="col-8">
-			<h3>Mi nombre es Kevin Bazan Espinoza, me dedico al diseño y desarrollo web <br></h3>
+			<h3>Mi nombre es Kevin Bazan, me dedico al diseño y desarrollo web <br>
+				Soy un apasionado por la tecnología, me gusta actualizarme con las nuevas tecnologias de manera autodidacta<br>
+			</h3>	
+			
+			<h3>Tengo conocimiento en HTML5, CSS3, Javascript, PHP, MySQL</h3>
+			
+
+
+
+
+			
 
 			<a href="#portafolio"><button href="#" class="myBtn-oscuro" onclick="fadeOut()">Ver Portafolio</button></a>
 			
@@ -89,24 +106,84 @@
 
 
 
-<div class="skills">
-	<h1>My Skills</h1>
-	<li>
-		<h3>HTML5</h3><span class="bar"><span class="html"></span></span>
-	</li>
+<div class="container" id="portafolio">
+	<!-- <div class="rectangle bg-white skew-left"></div> -->
+	<h1>Portafolio</h1>
 
-	<li>
-		<h3>CSS3</h3><span class="bar"><span class="css"></span></span>
-	</li>
 
-	<li>
-		<h3>JQUERY</h3><span class="bar"><span class="jquery"></span></span>
-	</li>
 
-	<li>
-		<h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
-	</li>
+	<div class="row">
+		<div class="col-6">
+			<div class="card1">
+		<div class="face face1">
+			<img src="img/portafolio1.png" width="">
+		</div>
+		<div class="face face2">
+			<div class="content">
+				<h2>CMS</h2>
+				<p>Pagina Dinamica de Noticias hecha con HTML5, CSS3, Bootstrap, PHP, MYSQL</p>
+				<a href="https://espacioinformativo1.000webhostapp.com/" target="_blank"><button>Visitar Web</button></a>
+				
+			</div>
+		</div>
+	</div>
+		</div>
+
+
+		<div class="col-6">
+			<div class="card1">
+		<div class="face face1">
+			<img src="img/livework.jpg" width="">
+		</div>
+		<div class="face face2">
+			<div class="content">
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Mi nombre es Kevin Bazan, me dedico al diseño y desarrollo web <br>
+				Soy un apasionado por el desarrollo web, me gusta actualizarme con las nuevas tecnologias de manera autodidacta</p>
+				<a href=""><button>Visitar Web</button></a>
+				
+			</div>
+		</div>
+	</div>
+		</div>
+
+
+		
+	</div>
+	
+	
+	
 </div>
+
+
+
+
+
+<div class="" id="contacto">
+	<h1>Contacto</h1>
+
+
+
+
+
+	<div class="container1">
+      <div class="contact-method">
+        <i class="fa fa-envelope"></i>
+        <span>kevinbazanespinoza@gmail.com</span>
+      </div>
+      <div class="contact-method">
+        <i class="fa fa-mobile"></i>
+        <span>+111111111111</span>
+      </div>
+      <div class="contact-method">
+        <i class="fa fa-map-marker"></i>
+        <span>Lima - Perú</span>
+      </div>
+    </div>
+</div>
+
+
+
 
 
 
